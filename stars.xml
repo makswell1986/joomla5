@@ -6,6 +6,21 @@
     <description>Stars is demo extension for Joomla! 5</description>
     
     <namespace path="src/">TechFry\Component\Stars</namespace>
+    <install>
+ <sql>
+  <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+ </sql>
+</install>
+<uninstall>
+ <sql>
+  <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+ </sql>
+</uninstall>
+<update>
+ <schemas>
+  <schemapath type="mysql">sql/updates/mysql</schemapath>
+ </schemas>
+</update>
     
     <administration>
         <menu link="index.php?option=com_stars">Stars</menu>
