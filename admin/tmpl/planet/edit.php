@@ -1,4 +1,5 @@
 <?php
+
 use Joomla\CMS\HTML\HTMLHelper;
 
 $wa = $this->document->getWebAssetManager();
@@ -13,4 +14,4 @@ $wa->useScript('form.validate');
     
     <input type="hidden" name="task" value="planet.edit" />
     <?php echo HTMLHelper::_('form.token'); ?>
-</form> 
+</form>

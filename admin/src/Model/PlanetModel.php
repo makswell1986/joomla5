@@ -18,4 +18,11 @@ class PlanetModel extends AdminModel
         
         return $form;
     }
+
+    public function save($data)
+{
+    /* Add code to modify data before saving */
+            
+    return parent::save($data);
+}
 }
